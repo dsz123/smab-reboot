@@ -24,7 +24,9 @@ LinuxCNC, in my brief experience, is one of those systems that is phenomally pow
 
 ## Electronics
 
-
+On the advice of folks in the forums at (forum.linuxcnc.org) I chose two sets of Mesa cards to connect the PC and the actual robot arm:
+- The [7i80HDT]() general purpose, ethernet I/O card
+- Three [7i40-LV]() motor control cards. These can each drive 2 brushed DC motors and also handle the encoders.
 
 ## G-Code
 
@@ -32,7 +34,7 @@ LinuxCNC, in my brief experience, is one of those systems that is phenomally pow
 
 In this repo, you'll find:
 - The LinuxCNC configuration files required to connect the various pieces of the puzzle.
-- Some 
+- A Python script for generating G-code scripts in 6-axis configurations. Not universal; specific to my needs.
 - G-code scripts that are highly specific to Sir Mix-A-Bot, but perhaps helpful to other folks for some reason?
 
 ## Manipulator
